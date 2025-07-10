@@ -1,0 +1,196 @@
+.formulario-contacto {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 30px;
+  padding: 40px;
+  background: #fefefe;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.1);
+  max-width: 1000px;
+  margin: auto;
+  margin-top: 20px;
+  font-family: Arial, sans-serif;
+}
+
+form {
+    
+  flex: 1;
+  min-width: 300px;
+}
+
+form h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #555;
+}
+
+form input, form textarea, form select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+form button {
+  background: #25d366;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+form button:hover {
+  background: #1ebe5d;
+}
+
+/* Chat Preview */
+.chat-preview {
+  flex: 1;
+  min-width: 300px;
+  background: #e5ddd5;
+  border-radius: 12px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.chat-header {
+  background: #075e54;
+  color: white;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+
+.chat-header img {
+  width: 36px;
+  height: 36px;
+  margin-right: 10px;
+}
+
+.chat-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.chat-title {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.chat-num {
+  font-size: 13px;
+  opacity: 0.8;
+}
+
+.chat-body {
+  flex: 1;
+  padding: 15px;
+  background: url('https://i.imgur.com/2tujvWA.png'); /* patrón similar a WhatsApp */
+  background-size: cover;
+}
+
+.chat-body p {
+  background: white;
+  display: inline-block;
+  padding: 10px 15px;
+  border-radius: 12px 12px 12px 0;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.2);
+  font-size: 14px;
+  color: #333;
+  white-space: pre-line;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.wa-notification {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background: #fff;
+  border-left: 5px solid #25d366;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  border-radius: 8px;
+  width: 300px;
+  padding: 15px;
+  display: none;
+  z-index: 9999;
+  animation: fadeIn 0.4s ease;
+}
+
+.wa-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.wa-header img {
+  width: 24px;
+  height: 24px;
+}
+
+.wa-header strong {
+  font-size: 16px;
+  color: #25d366;
+}
+
+.wa-body {
+  margin-top: 10px;
+  font-size: 13px;
+  color: #555;
+}
+
+.wa-body i {
+  color: #f39c12;
+  margin-right: 5px;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

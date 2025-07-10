@@ -1,0 +1,113 @@
+<!-- En el <head> -->
+<link rel="stylesheet" href="/assets/Css/HeaderFooter.css"> <!-- Estilos header/footer -->
+<link rel="stylesheet" href="/styles/contactostyle.css"> <!-- Estilos logos whatsapp -->
+<link rel="shortcut icon" href="/images/favi-icon/faviicon.png" type="image/x-icon"> <!-- Favicon -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"> <!-- Iconos -->
+
+<body>
+  <!-- HEADER -->
+  <div id="header-placeholder"></div>
+
+
+
+
+
+
+
+  <!-- Contenido principal aquí -->
+  <div class="formulario-contacto">
+    <form id="formulario">
+      <h2>Contáctanos</h2>
+
+      <label for="nombre">Nombres y Apellidos:</label>
+      <input type="text" id="nombre" required>
+
+      <label for="codigo">Código de país (sin +):</label>
+      <input type="text" id="codigo" placeholder="Ej. 1 para USA" required>
+
+      <label for="numero">Celular:</label>
+      <input type="text" id="numero" required>
+
+      <label for="servicio">Servicio de interés:</label>
+      <select id="servicio" required>
+        <option value="" disabled selected>Seleccione</option>
+        <option value="Seguro de Hospitalización">Seguro de Hospitalización</option>
+        <option value="Seguro de Accidentes">Seguro de Accidentes</option>
+        <option value="Seguro de Visión y Odontología">Seguro de Visión y Odontología</option>
+        <option value="Seguro de Enfermedades Críticas">Seguro de Enfermedades Críticas</option>
+        <option value="Seguro de Discapacidad y Reposo">Seguro de Discapacidad y Reposo</option>
+        <option value="Seguro de Vida">Seguro de Vida</option>
+        <option value="Otro">Otro</option>
+      </select>
+
+      <label for="mensaje">Mensaje:</label>
+      <textarea id="mensaje" rows="4" required></textarea>
+
+      <button type="submit">Enviar por WhatsApp</button>
+    </form>
+
+    <div class="chat-preview">
+      <div class="chat-header">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="Mavi Logo">
+        <div class="chat-info">
+          <span class="chat-title">Mavi Insurance</span>
+          <span class="chat-num" id="chat-num-preview"></span>
+        </div>
+      </div>
+      <div class="chat-body" id="mensaje-chat">
+        <p class="placeholder">Tu mensaje aparecerá aquí...</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Notificación flotante -->
+  <div class="wa-notification" id="wa-notification">
+    <div class="wa-header">
+      <img src="/images/favi-icon/faviicon.png" alt="Logo WhatsApp">
+      <strong>Mensaje enviado</strong>
+    </div>
+    <div class="wa-body">
+      <p><i class="fas fa-exclamation-circle"></i> Este mensaje fue enviado de forma privada. Un asesor se pondrá en
+        contacto contigo.</p>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- FOOTER -->
+  <div id="footer-placeholder"></div>
+
+  <!-- Script principal -->
+  <script src="/assets/script.js"></script>
+  <script src="/assets/sctiptjs/nodo.js"></script>
+
+  <script>
+    // Cargar HEADER (ajusta ruta según ubicación del HTML)
+    fetch('../../Parciales HF/header.html')
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById('header-placeholder').innerHTML = data;
+      });
+
+    // Cargar FOOTER
+    fetch('../../Parciales HF/footer.html')
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById('footer-placeholder').innerHTML = data;
+      });
+  </script>
+</body>

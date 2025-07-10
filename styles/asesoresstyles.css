@@ -1,0 +1,99 @@
+.asesores-pro {
+  padding: 60px 5%;
+  background: #ffffff;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  margin-top: 10px;
+}
+
+.asesor {
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.asesor:hover {
+  transform: translateY(-8px);
+}
+
+.top-banner {
+  position: relative;
+  text-align: center;
+  background-color: #f48ca3;
+  color: white;
+  padding: 20px;
+}
+
+.top-banner img {
+  background-color: white; /* 👈 Esto fuerza el fondo blanco */
+  width: 130px;
+  height: 130px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 5px solid white;
+  margin-bottom: 10px;
+}
+
+.datos h2 {
+  font-size: 24px;
+  margin: 5px 0;
+}
+
+.datos h4 {
+  font-weight: normal;
+  font-size: 16px;
+  color: #ffeef2;
+}
+
+.contenido {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px;
+  flex-wrap: wrap;
+}
+
+.bio {
+  flex: 1 1 60%;
+  padding-right: 20px;
+}
+
+.bio h3 {
+  color: #333;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.bio p {
+  font-size: 15px;
+  color: #555;
+}
+
+.perfil {
+  flex: 1 1 35%;
+  border-left: 2px solid #eee;
+  padding-left: 20px;
+}
+
+.perfil p {
+  font-size: 15px;
+  margin-bottom: 8px;
+  color: #444;
+}
+
+.redes {
+  margin-top: 15px;
+}
+
+.redes a {
+  margin-right: 10px;
+  color: #f48ca3;
+  font-size: 18px;
+  transition: color 0.3s;
+}
+
+.redes a:hover {
+  color: #d9376e;
+}

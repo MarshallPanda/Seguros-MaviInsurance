@@ -1,0 +1,52 @@
+<!-- En el <head> -->
+<link rel="stylesheet" href="/assets/Css/HeaderFooter.css"> <!-- Estilos header/footer -->
+<link rel="shortcut icon" href="/images/favi-icon/faviicon.png" type="image/x-icon"> <!-- Favicon -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"> <!-- Iconos -->
+
+<body>
+  <!-- HEADER -->
+  <div id="header-placeholder"></div>
+
+
+
+
+
+
+
+  <!-- Contenido principal aquí -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <!-- FOOTER -->
+  <div id="footer-placeholder"></div>
+
+  <!-- Script principal -->
+  <script src="/assets/script.js"></script>
+
+  <script>
+    // Cargar HEADER (ajusta ruta según ubicación del HTML)
+    fetch('../../Parciales HF/header.html')
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById('header-placeholder').innerHTML = data;
+      });
+
+    // Cargar FOOTER
+    fetch('../../Parciales HF/footer.html')
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById('footer-placeholder').innerHTML = data;
+      });
+  </script>
+</body>

@@ -1,0 +1,274 @@
+
+/* Corregir desbordamiento horizontal */
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+.seccion-sobre {
+  display: flex;
+  align-items: center;       /* Centra verticalmente */
+  justify-content: space-between;
+  padding: 40px 5%;
+  gap: 40px;                 /* Espacio entre imagen y texto */
+  flex-wrap: wrap;           /* Permite que se adapte en móvil */
+}
+
+/* Imagen del lado izquierdo */
+.sobre-img img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* Columna derecha: contenido */
+.sobre-contenido {
+  max-width: 600px;
+}
+
+/* Texto vertical al costado */
+.etiqueta-vertical {
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  font-size: 14px;
+  color: #999;
+  margin-bottom: 20px;
+}
+
+/* Título principal */
+.sobre-contenido h2 {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* Texto descriptivo */
+.sobre-contenido p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #333;
+}
+
+/* Contenedor de botones */
+.botones {
+  margin-top: 25px;
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+/* Estilo general para botones */
+.btn {
+  padding: 12px 20px;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 8px;
+  font-size: 14px;
+  display: inline-block;
+  text-align: center;
+}
+
+/* Botón rosado sólido */
+.btn.primario {
+  background-color: #f48ca3;
+  color: white;
+}
+
+/* Botón contorneado rosado */
+.btn.secundario {
+  border: 2px solid #f48ca3;
+  color: #f48ca3;
+}
+.sobre-img {
+  flex: 1 1 300px;     /* Se adapta sin exceder */
+  max-width: 600px;    /* Tamaño máximo en escritorio */
+}
+
+.sobre-img img {
+  width: 100%;         /* Ocupa todo el ancho del contenedor */
+  height: auto;
+  border-radius: 10px; /* Opcional: esquinas redondeadas */
+}
+
+/* Responsive para móviles */
+@media (max-width: 768px) {
+  .seccion-sobre {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .etiqueta-vertical {
+    writing-mode: horizontal-tb;
+    transform: none;
+    margin-bottom: 10px;
+  }
+
+  .botones {
+    justify-content: center;
+  }
+}
+
+
+/* De acreditaciones */
+
+
+/* Contenedor general */
+.estadisticas {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+/* Línea decorativa superior */
+.decoracion-linea {
+  width: 240px;          /* ← Cambia esto para hacerla más larga o más corta */
+  height: 6px;           /* Grosor */
+  background-color: #f48ca3;
+  border-radius: 10px;   /* Bordes redondeados */
+  margin: 0 auto 40px auto;
+  position: relative;
+  padding-left: 120px;
+}
+
+.decoracion-linea::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;         /* ← Controla su separación vertical con la línea gruesa */
+  left: 20%;            /* ← Controla dónde comienza la línea horizontalmente */
+  width: 60%;           /* ← Controla su longitud */
+  height: 2px;
+  background-color: #f48ca3;
+}
+
+
+/* Contenedor de tarjetas (tres columnas en escritorio) */
+.estadisticas-grid {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+/* Tarjeta individual */
+.card {
+  background-color: #f8f8f8;
+  padding: 30px;
+  border-radius: 20px;
+  width: 280px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+/* Íconos dentro de cada tarjeta */
+.card img {
+  width: 60px;
+  margin-bottom: 15px;
+}
+
+/* Número destacado */
+.card h3 {
+  font-size: 28px;
+  color: #f48ca3;
+  margin: 0;
+}
+
+/* Descripción */
+.card p {
+  margin: 10px 0 0 0;
+  font-weight: bold;
+  color: #333;
+}
+
+
+
+
+
+
+/*Asociados*/
+
+.aliados {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 40px;
+  padding: 60px 5%;
+}
+
+.aliados-texto {
+  flex: 1 1 400px;
+}
+
+.aliados-texto h2 {
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.aliados-texto p {
+  margin-bottom: 20px;
+  font-size: 16px;
+  color: #333;
+}
+
+.botones-slider {
+  display: flex;
+  gap: 15px;
+}
+
+.botones-slider button {
+  padding: 12px 20px;
+  border-radius: 30px;
+  border: 2px solid #f48ca3;
+  background-color: white;
+  color: #f48ca3;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.botones-slider button.activo {
+  background-color: #f48ca3;
+  color: white;
+}
+
+.aliados-slider {
+  flex: 1 1 500px;
+  display: flex;
+  flex-direction: column;
+}
+
+.grupo-logos {
+  display: none;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+
+
+.grupo-activo {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columnas */
+  grid-template-rows: repeat(2, auto);   /* 2 filas */
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.grupo-logos img {
+  width: 120px;
+  height: 120px;
+  object-fit: contain;
+  background-color: #f8f8f8;
+  padding: 15px;
+  border-radius: 16px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+

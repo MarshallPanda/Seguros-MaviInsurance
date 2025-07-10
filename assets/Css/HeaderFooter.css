@@ -1,0 +1,400 @@
+/* ========================================================
+   VARIABLES DE TEMA (modo claro)
+======================================================== */
+:root {
+  --color-bg: #fefefe;
+  --color-navbar-top-bg: #f4a5bb;
+  --color-navbar-top-text: white;
+  --color-navbar-bottom-bg: white;
+  --color-navbar-bottom-text: #333;
+  --color-navbar-bottom-hover: #f48ca3;
+  --color-brand-primary: #f48ca3;
+  --color-brand-secondary: #b1e25d;
+  --color-shadow: rgba(0, 0, 0, 0.1);
+}
+
+/* ========================================================
+   RESET GENERAL Y SISTEMA DE CAJAS
+======================================================== */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: var(--color-bg);
+}
+
+/* ========================================================
+   NAVBAR TOP (BARRA SUPERIOR)
+======================================================== */
+.navbar-top {
+  background-color: var(--color-navbar-top-bg);
+  color: var(--color-navbar-top-text);
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 40px;
+  align-items: center;
+  font-size: 14px;
+}
+
+.navbar-top a {
+  color: var(--color-navbar-top-text);
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+.navbar-top span {
+  color: var(--color-navbar-top-text);
+  margin: 0 5px;
+}
+
+.top-left,
+.top-right {
+  display: flex;
+  align-items: center;
+}
+
+.top-right a {
+  font-size: 16px;
+  margin-left: 10px;
+}
+
+/* ========================================================
+   NAVBAR BOTTOM (MENÚ PRINCIPAL)
+======================================================== */
+.navbar-bottom {
+  background-color: var(--color-navbar-bottom-bg);
+  margin: -25px auto 0 auto;
+  width: 90%;
+  border-radius: 50px;
+  padding: 15px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 8px var(--color-shadow);
+  flex-wrap: wrap;
+}
+
+.navbar-bottom ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-bottom a {
+  text-decoration: none;
+  color: var(--color-navbar-bottom-text);
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.navbar-bottom a:hover,
+.navbar-bottom a.active {
+  color: var(--color-navbar-bottom-hover);
+}
+
+/* Marca/logo */
+.brand {
+  font-size: 28px;
+  font-weight: bold;
+  color: var(--color-brand-primary);
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  text-transform: uppercase;
+}
+
+.cream {
+  color: var(--color-brand-secondary);
+  text-transform: none;
+}
+
+/* ========================================================
+   FOOTER
+======================================================== */
+.footer-clean {
+  background-color: #ffffff;
+  padding: 60px 20px;
+  text-align: center;
+  color: #333;
+  border-top: 1px solid #eee;
+}
+
+.footer-logo {
+  font-size: 28px;
+  font-weight: bold;
+  color: #f48ca3;
+  margin-bottom: 20px;
+}
+
+.footer-logo span {
+  color: #b1e25d;
+}
+
+.footer-social {
+  margin: 20px 0;
+}
+
+/* Íconos de redes sociales en el footer */
+.footer-social a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 10px;
+  font-size: 18px;
+  color: #f48ca3;
+  border: 1px solid #f48ca3;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  transition: 0.3s;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: middle;
+}
+
+.footer-social a i {
+  text-decoration: none;
+  line-height: 1;
+}
+
+/* Columnas del footer */
+.footer-columns {
+  display: flex;
+  justify-content: center;
+  gap: 80px;
+  margin-top: 30px;
+  flex-wrap: wrap;
+  text-align: left;
+}
+
+.footer-box {
+  min-width: 220px;
+}
+
+.footer-box h4 {
+  font-size: 16px;
+  margin-bottom: 12px;
+  color: #f48ca3;
+}
+
+.footer-pages {
+  display: flex;
+  gap: 40px;
+}
+
+.footer-pages ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.footer-pages li {
+  margin-bottom: 6px;
+}
+
+.footer-pages a {
+  text-decoration: none;
+  color: #444;
+  font-size: 14px;
+}
+
+.footer-pages a:hover {
+  color: #f48ca3;
+}
+
+.footer-box p {
+  margin: 6px 0;
+  font-size: 14px;
+}
+
+.footer-box h5 {
+  margin-top: 15px;
+  font-size: 14px;
+  color: #222;
+}
+
+/* Íconos de chat del footer */
+.chat-icons a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 10px;
+  font-size: 18px;
+  color: #25d366;
+  border: 1px solid #25d366;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  transition: 0.3s;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: middle;
+}
+
+.chat-icons a i {
+  text-decoration: none;
+  line-height: 1;
+}
+
+.chat-icons a:hover {
+  background-color: #25d366;
+  color: white;
+}
+
+.footer-copy {
+  margin-top: 30px;
+  font-size: 13px;
+  color: #888;
+}
+
+/* ========================================================
+   MENÚ RESPONSIVO (MÓVIL/TABLET)
+======================================================== */
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 24px;
+  color: var(--color-navbar-bottom-text);
+  cursor: pointer;
+}
+
+.main-menu ul {
+  display: flex;
+  list-style: none;
+  gap: 25px;
+}
+
+/* Adaptación móvil */
+@media (max-width: 768px) {
+
+  /* Mostrar el ícono del menú hamburguesa */
+  .menu-toggle {
+    display: block;
+  }
+
+  /* Estilo del menú oculto por defecto en móviles */
+  .main-menu ul {
+    display: none;
+    flex-direction: column;
+    background-color: white;
+    width: 100%;
+    padding: 10px 0;
+    border-top: 1px solid #ddd;
+    align-items: center;
+    text-align: center;
+
+  }
+
+  .main-menu ul.active {
+    display: flex;
+  }
+
+  /* Menú inferior en columna */
+  .navbar-bottom {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  /* Footer centrado */
+  .footer-columns {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    text-align: center;
+  }
+
+  /* Logo o marca "Mavi Insurance" */
+  .brand {
+    padding: 10px;
+    text-align: center;
+    margin: 10px 60px;
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+
+  /* Opcional: centrar el contenedor del menú (por si es necesario) */
+  .main-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .navbar-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+  }
+
+  .navbar-bottom .nav-left,
+  .navbar-bottom .nav-right {
+    display: flex;
+    gap: 20px;
+    padding-left: center;
+    /* centrar inicio, nosotros y asesores */
+
+  }
+
+  .navbar-bottom .nav-right {
+    padding-left: 0;
+    padding-right: center;
+    /* centrar servicios, galeria y contacto */
+  }
+
+
+
+
+/* ========================================================
+   FOTTER CENTER PAGINAS
+======================================================== */
+
+
+
+  .footer-pages {
+    display: flex;
+    justify-content: center;
+    /* Centra horizontalmente */
+    align-items: flex-start;
+    gap: 50px;
+    /* Espacio entre las dos columnas */
+    margin-top: 10px;
+    text-align: left;
+    /* Para que los ítems estén alineados en columna */
+  }
+
+  .footer-pages ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .footer-pages li {
+    margin: 5px 0;
+  }
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,128 @@
+<!-- En el <head> -->
+<link rel="stylesheet" href="/assets/Css/HeaderFooter.css"> <!-- Estilos header/footer -->
+<link rel="stylesheet" href="/styles/galeriastyle.css"> <!-- Estilos galeriastyle.css -->
+<link rel="shortcut icon" href="/images/favi-icon/faviicon.png" type="image/x-icon"> <!-- Favicon -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"> <!-- Iconos -->
+
+<body>
+  <!-- HEADER -->
+  <div id="header-placeholder"></div>
+
+
+
+
+
+
+
+  <!-- Contenido principal aquí -->
+  <div class="filtros">
+    <button class="filtro activo" data-filtro="todos">Todos</button>
+    <button class="filtro" data-filtro="fotos">Fotos</button>
+    <button class="filtro" data-filtro="instagram">Instagram</button>
+    <button class="filtro" data-filtro="facebook">Facebook</button>
+  </div>
+
+  <div class="catalogo">
+    <div class="item" data-categoria="fotos" data-link="#">
+      <img src="/images/Galeria/Fotos/dow1.jpg" alt="Atención personalizada">
+      <div class="nombre">Graduaciones</div>
+    </div>
+    <div class="item" data-categoria="fotos" data-link="#">
+      <img src="/images/Galeria/Fotos/dow2.jpg" alt="Promoción Vida">
+      <div class="nombre">Nueva asesoras</div>
+    </div>
+    <div class="item" data-categoria="fotos" data-link="#">
+      <img src="/images/Galeria/Fotos/dow3.jpg" alt="Campaña Salud">
+      <div class="nombre">Nueva asesoras</div>
+    </div>
+    <div class="item" data-categoria="fotos" data-link="#">
+      <img src="/images/Galeria/Fotos/dow4.jpg" alt="Coberturas disponibles">
+      <div class="nombre">Nueva asesoras</div>
+    </div>
+    <div class="item" data-categoria="instagram" data-link="https://www.instagram.com/p/DLnLVu8MdRG/?utm_source=ig_web_copy_link">
+      <img src="/images/Galeria/Instagram/isnta1.jpg" alt="Coberturas disponibles">
+      <div class="nombre">Coberturas dental</div>
+    </div>
+    <div class="item" data-categoria="instagram" data-link="https://www.instagram.com/p/DLnKqyesXrI/">
+      <img src="/images/Galeria/Instagram/insta2.jpg" alt="Coberturas disponibles">
+      <div class="nombre">Cobertura de Salud</div>
+    </div>
+    <div class="item" data-categoria="instagram" data-link="https://www.instagram.com/maviinsurance/p/DLcrcp1Mqzm/">
+      <img src="/images/Galeria/Instagram/insta3.jpg" alt="Coberturas disponibles">
+      <div class="nombre">Nuestros horariois</div>
+    </div>
+    <div class="item" data-categoria="facebook" data-link="https://www.facebook.com/share/p/1FMTKtTEb9/">
+      <img src="/images/Galeria/Facebook/face1.jpg" alt="Coberturas disponibles">
+      <div class="nombre">Recibe asesoria</div>
+    </div>
+    <div class="item" data-categoria="facebook" data-link="https://www.facebook.com/share/p/16mLpSd4CJ/">
+      <img src="/images/Galeria/Facebook/face2.jpg" alt="Coberturas disponibles">
+      <div class="nombre">Coberturas familiar</div>
+    </div>
+    <div class="item" data-categoria="facebook" data-link="https://www.facebook.com/share/p/1AiNq6aw34/">
+      <img src="/images/Galeria/Facebook/face3.jpg" alt="Coberturas disponibles">
+      <div class="nombre">Seguro familiar</div>
+    </div>
+    <div class="item" data-categoria="facebook" data-link="https://www.facebook.com/share/p/16p9j4sNvx/">
+      <img src="/images/Galeria/Facebook/face4.jpg" alt="Coberturas disponibles">
+      <div class="nombre">Asesoria medica</div>
+    </div>
+    <div class="item" data-categoria="facebook" data-link="https://www.facebook.com/share/p/1ArUNLWwL1/">
+      <img src="/images/Galeria/Facebook/face5.jpg" alt="Coberturas disponibles">
+      <div class="nombre">Coberturas ante accidentes</div>
+    </div>
+    <div class="item" data-categoria="facebook" data-link="https://www.facebook.com/share/p/19QDEcQrKJ/">
+      <img src="/images/Galeria/Facebook/face6.jpg" alt="Coberturas disponibles">
+      <div class="nombre">Atencion personalizada</div>
+    </div>
+    <div class="item" data-categoria="facebook" data-link="https://www.facebook.com/share/p/16BAXk62sx/">
+      <img src="/images/Galeria/Facebook/face7.jpg" alt="Coberturas disponibles">
+      <div class="nombre">Cumpleaños Paola Useche - Asesora</div>
+    </div>
+  </div>
+
+  <div id="lightbox" class="lightbox">
+    <div class="lightbox-content">
+      <span class="cerrar" onclick="cerrarLightbox()">×</span>
+      <img id="lightbox-img" src="" alt="">
+      <div id="lightbox-nombre" class="nombre-lb"></div>
+      <a id="lightbox-link" href="#" target="_blank" class="btn-publicacion">Ir a publicación</a>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- FOOTER -->
+  <div id="footer-placeholder"></div>
+
+  <!-- Script principal -->
+  <script src="/assets/script.js"></script>
+  <script src="/scripts/galeria-script.js"></script>
+
+  <script>
+    // Cargar HEADER (ajusta ruta según ubicación del HTML)
+    fetch('../../Parciales HF/header.html')
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById('header-placeholder').innerHTML = data;
+      });
+
+    // Cargar FOOTER
+    fetch('../../Parciales HF/footer.html')
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById('footer-placeholder').innerHTML = data;
+      });
+  </script>
+</body>

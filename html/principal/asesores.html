@@ -1,0 +1,101 @@
+<!-- En el <head> -->
+<link rel="stylesheet" href="/assets/Css/HeaderFooter.css"> <!-- Estilos header/footer -->
+<link rel="stylesheet" href="/styles/asesoresstyles.css"> <!-- Estilos asesoresstyles.css -->
+<link rel="shortcut icon" href="/images/favi-icon/faviicon.png" type="image/x-icon"> <!-- Favicon -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"> <!-- Iconos -->
+
+<body>
+  <!-- HEADER -->
+  <div id="header-placeholder"></div>
+
+
+
+
+
+
+
+  <!-- Contenido principal aquí -->
+  <section class="asesores-pro">
+    <div class="asesor">
+      <div class="top-banner">
+        <img src="/images/nosotros-asesores/MariaWilliam.png" alt="Asesor 1">
+        <div class="datos">
+          <h2>Maria William</h2>
+          <h4>Asesora en Seguros de Salud</h4>
+        </div>
+      </div>
+      <div class="contenido">
+        <div class="bio">
+          <h3>“Tu bienestar, nuestra prioridad.”</h3>
+          <p>Con más de 7 años de experiencia en asesoría de seguros de salud, Maria William acompaña a nuestros clientes a
+            encontrar la mejor protección con un enfoque humano y empático. Está comprometida en brindar tranquilidad y
+            soluciones reales.</p>
+        </div>
+        <div class="perfil">
+          <p><strong>Ubicada en:</strong> USA, Illinos</p>
+          <p><strong>Edad:</strong> 31 años</p>
+          <div class="redes">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="asesor">
+      <div class="top-banner">
+        <img src="/images/nosotros-asesores/Vicente Morillo.jpg" alt="Asesor 2">
+        <div class="datos">
+          <h2>Vicente Morillo</h2>
+          <h4>Especialista en hospitalizaciones</h4>
+        </div>
+      </div>
+      <div class="contenido">
+        <div class="bio">
+          <h3>“Protege lo que más valoras.”</h3>
+          <p>Vicente es experto en seguros para los seguros de hospitalizaciones. Su atención personalizada y su enfoque técnico lo
+            convierten en uno de los asesores más confiables. Siempre está dispuesto a ayudarte a elegir la mejor
+            cobertura.</p>
+        </div>
+        <div class="perfil">
+          <p><strong>Ubicado en:</strong> Venezuela, a</p>
+          <p><strong>Edad:</strong> 29 años</p>
+          <div class="redes">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+
+
+
+
+  <!-- FOOTER -->
+  <div id="footer-placeholder"></div>
+
+  <!-- Script principal -->
+  <script src="/assets/script.js"></script>
+
+  <script>
+    // Cargar HEADER (ajusta ruta según ubicación del HTML)
+    fetch('../../Parciales HF/header.html')
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById('header-placeholder').innerHTML = data;
+      });
+
+    // Cargar FOOTER
+    fetch('../../Parciales HF/footer.html')
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById('footer-placeholder').innerHTML = data;
+      });
+  </script>
+</body>

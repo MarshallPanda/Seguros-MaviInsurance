@@ -1,0 +1,124 @@
+<!-- En el <head> -->
+<link rel="stylesheet" href="/assets/Css/HeaderFooter.css"> <!-- Estilos header/footer -->
+<link rel="stylesheet" href="/styles/nosotrosstyle.css"> <!-- Estilos nosotrosscss -->
+<link rel="shortcut icon" href="/images/favi-icon/faviicon.png" type="image/x-icon"> <!-- Favicon -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"> <!-- Iconos -->
+
+<body>
+    <!-- HEADER -->
+    <div id="header-placeholder"></div>
+
+
+
+
+
+
+
+    <!-- Contenido principal aquí -->
+
+    <section class="seccion-aseguradora">
+        <h2><span>Asesoría y Confianza</span><br>Seguros con Mavi Insurance</h2>
+        <div class="contenido-grid">
+
+            <!-- Columna izquierda -->
+            <div class="columna izquierda">
+                <h3>Sobre Nosotros</h3>
+                <p class="resumen">
+                    En Mavi Insurance te brindamos una atención personalizada y cercana,
+                    ayudando a familias y empresas a encontrar la protección ideal.
+                </p>
+                <p>
+                    Contamos con años de experiencia trabajando junto a aseguradoras líderes.
+                    Nuestro equipo analiza cada caso para ofrecerte tranquilidad, claridad y cobertura real.
+                </p>
+                <a href="/html/principal/asesores.html" class="btn azul">Conócenos</a>
+            </div>
+
+            <!-- Imagen central -->
+            <div class="columna imagen">
+                <img src="/images/favi-icon/faviicon.png" alt="Clientes asegurados con confianza">
+            </div>
+
+            <!-- Columna derecha -->
+            <div class="columna derecha">
+                <h3>Nuestros Beneficios</h3>
+                <p>
+                    Trabajamos con compromiso y empatía. Estas son algunas razones para confiar en nosotros:
+                </p>
+                <ul class="lista-beneficios">
+                    <li><i class="fas fa-check-circle"></i> Coberturas adaptadas a tus necesidades</li>
+                    <li><i class="fas fa-check-circle"></i> Acompañamiento en todo momento</li>
+                    <li><i class="fas fa-check-circle"></i> Red de aseguradoras confiables</li>
+                </ul>
+                <a href="/html/principal/contacto.html" class="btn rosado">Cotiza tu Seguro</a>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="equipo-aliados">
+        <h2>Fundadores de Mavi Insurance</h2>
+        <div class="contenedor-aliados">
+            <div class="tarjeta-aliado">
+                <div class="imagen-aliado">
+                    <img src="/images/nosotros-asesores/MariaWilliam.png" alt="Aliado 1">
+                </div>
+                <h3>Maria William</h3>
+                <p>Asesora de salud</p>
+                <div class="redes-aliado">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+
+            <div class="tarjeta-aliado">
+                <div class="imagen-aliado">
+                    <img src="/images/nosotros-asesores/Vicente Morillo.jpg" alt="Aliado 2">
+                </div>
+                <h3>Vicente Morillo</h3>
+                <p>Asesor de servicios</p>
+                <div class="redes-aliado">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- FOOTER -->
+    <div id="footer-placeholder"></div>
+
+    <!-- Script principal -->
+    <script src="/assets/script.js"></script>
+
+    <script>
+        // Cargar HEADER (ajusta ruta según ubicación del HTML)
+        fetch('../../Parciales HF/header.html')
+            .then(res => res.text())
+            .then(data => {
+                document.getElementById('header-placeholder').innerHTML = data;
+            });
+
+        // Cargar FOOTER
+        fetch('../../Parciales HF/footer.html')
+            .then(res => res.text())
+            .then(data => {
+                document.getElementById('footer-placeholder').innerHTML = data;
+            });
+    </script>
+</body>

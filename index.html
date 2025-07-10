@@ -1,0 +1,133 @@
+<link rel="stylesheet" href="assets/Css/HeaderFooter.css"> <!--stylos header y footer-->
+<link rel="stylesheet" href="styles/indexstyle.css"> <!--stylos index-->
+<link rel="shortcut icon" href="images/favi-icon/faviicon.png" type="image/x-icon"> <!--icono superior-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<!--Libreria para iconos-->
+
+<body>
+    <div id="header"></div><!-- inportar header -->
+
+
+
+
+
+
+
+    <!-- contenido principal -->
+
+
+    <div class="seccion-sobre">
+        <!-- Columna izquierda: imagen -->
+        <div class="sobre-img">
+            <img src="images/index/maria index.jpg" alt="Asesora de seguros">
+        </div>
+
+        <!-- Columna derecha: contenido -->
+        <div class="sobre-contenido">
+            <p class="etiqueta-vertical">MAVI INSURANCE</p>
+            <h2>¿Necesitas Asesoramiento?<br>Habla con <strong>Nosotros</strong></h2>
+            <p>
+                En <strong>Mavi Insurance</strong> somos especialistas en asesoría de seguros personalizados.
+                Ayudamos a individuos y empresas a encontrar la cobertura ideal, analizando cada caso con atención y
+                compromiso.
+                Nos apasiona ofrecer tranquilidad mediante soluciones prácticas, claras y adaptadas a tus necesidades
+                reales.
+            </p>
+            <div class="botones">
+                <a href="#contacto" class="btn primario">HABLAR CON UN ASESOR</a>
+                <a href="#" class="btn secundario">DESCARGAR INFORMACIÓN</a>
+            </div>
+        </div>
+    </div>
+    <!-- acreditaciones y estadisticas   -->
+    <div class="estadisticas">
+        <div class="decoracion-linea"></div>
+
+        <div class="estadisticas-grid">
+            <!-- Tarjeta 1 -->
+            <div class="card">
+                <img src="images/index-estadistica/reloj.png" alt="Icono experiencia">
+                <h3>12+</h3>
+                <p>Años de experiencia</p>
+            </div>
+
+            <!-- Tarjeta 2 -->
+            <div class="card">
+                <img src="images/index-estadistica/licencia.png" alt="Icono licencia">
+                <h3>10+</h3>
+                <p>Licencia muchos estados</p>
+            </div>
+
+            <!-- Tarjeta 3 -->
+            <div class="card">
+                <img src="images/index-estadistica/clientes-felices.png" alt="Icono cliente feliz">
+                <h3>1000+</h3>
+                <p>Clientes satisfechos</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- asociados -->
+    <section class="aliados">
+        <div class="aliados-texto">
+            <p class="etiqueta-vertical">ALIADOS</p>
+            <h2>Empresas asociadas a Mavi Insurance</h2>
+            <p>
+                Trabajamos con aseguradoras y socios tecnológicos líderes para ofrecer un servicio integral y confiable.
+            </p>
+            <div class="botones-slider">
+                <button id="btn-1" class="activo">Aseguradoras</button>
+                <button id="btn-2">Siguiente</button>
+            </div>
+        </div>
+
+        <div class="aliados-slider">
+            <div class="grupo-logos grupo-activo" id="grupo-1">
+                <img src="images/index-asosiados/ambetter.png" alt="ambetter">
+                <img src="images/index-asosiados/AmeriHealth.png" alt="AmeriHealth">
+                <img src="images/index-asosiados/Ameritas.png" alt="Ameritas">
+                <img src="images/index-asosiados/blue-cross.png" alt="BlueCross">
+                <img src="images/index-asosiados/cigna.png" alt="Cigna">
+                <img src="images/index-asosiados/CombinedInsurance.png" alt="Combined">
+            </div>
+
+            <div class="grupo-logos" id="grupo-2">
+                <img src="images/index-asosiados/FideLityLife.png" alt="Fidelity">
+                <img src="images/index-asosiados/Florida Blue.png" alt="Florida Blue">
+                <img src="images/index-asosiados/Milina HealthCare.webp" alt="Molina">
+                <img src="images/index-asosiados/oscar.webp" alt="Oscar">
+                <img src="images/index-asosiados/United HealthCAre.png" alt="United Healthcare">
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <div id="footer"></div><!-- inportar footer -->
+    <script src="scripts/index-script.js"></script> <!-- inportar script de asociados -->
+
+    <script src="assets/script.js"></script>
+    <script>
+        // Cargar HEADER
+        fetch('Parciales HF/header.html')
+            .then(res => res.text())
+            .then(data => {
+                document.getElementById('header-placeholder').innerHTML = data;
+
+                // Cargar el script del menú luego de insertar el header
+                const script = document.createElement('script');
+                script.src = 'assets/script.js';
+                document.body.appendChild(script);
+            });
+
+        // Cargar FOOTER
+        fetch('Parciales HF/footer.html')
+            .then(res => res.text())
+            .then(data => {
+                document.getElementById('footer-placeholder').innerHTML = data;
+            });
+    </script>
+
+</body>

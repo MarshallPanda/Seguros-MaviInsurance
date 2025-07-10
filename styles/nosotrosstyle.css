@@ -1,0 +1,218 @@
+/* Sección principal */
+.seccion-aseguradora {
+  margin-top: 1px;
+  padding: 60px 5%;
+  background-color: #ffffff;
+  text-align: center;
+}
+
+.seccion-aseguradora h2 {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 40px;
+  line-height: 1.4;
+}
+
+.seccion-aseguradora h2 span {
+  color: #f48ca3;
+  font-weight: normal;
+}
+
+/* Grid de columnas */
+.contenido-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  align-items: center;
+  text-align: left;
+}
+
+/* Columnas */
+.columna h3 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.columna p {
+  color: #555;
+  margin-bottom: 15px;
+  line-height: 1.6;
+}
+
+.columna.izquierda .resumen {
+  font-weight: 600;
+  color: #444;
+}
+
+/* Imagen */
+.columna.imagen img {
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+/* Lista con íconos */
+.lista-beneficios {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+.lista-beneficios li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+
+.lista-beneficios i {
+  color: #54c4a7;
+  font-size: 18px;
+}
+
+/* Botones */
+.btn {
+  display: inline-block;
+  padding: 12px 20px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.btn.azul {
+  background-color: #5ec6e3;
+  color: white;
+}
+
+.btn.rosado {
+  background-color: #f48ca3;
+  color: white;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .contenido-grid {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .columna {
+    max-width: 100%;
+  }
+
+  .lista-beneficios li {
+    justify-content: center;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Sección equipo/aliados */
+.equipo-aliados {
+  text-align: center;
+  padding: 5px 50px;
+  background-color: #ffffff;
+}
+
+.equipo-aliados h2 {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 40px;
+  color: #222;
+}
+
+.contenedor-aliados {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+}
+
+.tarjeta-aliado {
+  background: white;
+  border-radius: 20px;
+  padding: 20px;
+  width: 280px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+  transition: transform 0.3s ease;
+}
+
+.tarjeta-aliado:hover {
+  transform: translateY(-5px);
+}
+
+.imagen-aliado {
+  width: 160px;
+  height: 160px;
+  margin: 0 auto 20px;
+  border: 6px solid #f48ca3;
+  border-radius: 50%;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.tarjeta-aliado:hover .imagen-aliado img {
+  transform: scale(1.1);
+}
+
+.imagen-aliado img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.tarjeta-aliado h3 {
+  margin: 0;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.tarjeta-aliado p {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 15px;
+}
+
+/* Íconos de redes nosotros */
+.redes-aliado a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 10px;
+  font-size: 18px;
+  color: #f48ca3;
+  border: 1px solid #f48ca3;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  transition: 0.3s;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: middle;
+}
+
+.redes-aliado a i {
+  text-decoration: none;
+  line-height: 1;
+}
+
+.redes-aliado a:hover {
+  background-color: #000000;
+  color: white;
+}

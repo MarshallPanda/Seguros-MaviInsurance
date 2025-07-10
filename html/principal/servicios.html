@@ -1,0 +1,149 @@
+<!-- En el <head> -->
+<link rel="stylesheet" href="/assets/Css/HeaderFooter.css"> <!-- Estilos header/footer -->
+<link rel="stylesheet" href="/styles/serviciosstyle.css"> <!-- Estilos serviciosstyles.css -->
+<link rel="shortcut icon" href="/images/favi-icon/faviicon.png" type="image/x-icon"> <!-- Favicon -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"> <!-- Iconos -->
+
+<body>
+  <!-- HEADER -->
+  <div id="header-placeholder"></div>
+
+
+
+
+
+
+
+  <!-- Contenido principal aquí -->
+  <section class="servicios-section">
+    <div class="titulo-decorado">
+      <span class="icono-titulo">💼</span>
+      <h2>Nuestros Servicios</h2>
+      <div class="linea"></div>
+    </div>
+
+    <div class="servicios-grid">
+      <div class="servicio-card">
+        <div class="icono-servicio">
+          <img src="/images/servicios-servicios/Hospitalizacion.jpg" alt="Hospitalización">
+        </div>
+        <h3>Hospitalización</h3>
+        <p>Recibe un monto en efectivo después de ser admitido por hospitalización. Apoyo real en momentos críticos.</p>
+      </div>
+
+      <div class="servicio-card">
+        <div class="icono-servicio">
+          <img src="/images/servicios-servicios/Accidentes.jpg" alt="Accidentes">
+        </div>
+        <h3>Accidentes</h3>
+        <p>Cubrimos tus gastos si sufres un accidente y necesitas atención médica urgente.</p>
+      </div>
+
+      <div class="servicio-card">
+        <div class="icono-servicio">
+          <img src="/images/servicios-servicios/Seguros de Vida.avif" alt="Visión y Odontología">
+        </div>
+        <h3>Visión y Odontología</h3>
+        <p>Accede a exámenes de visión, lentes, limpieza dental, consultas y tratamientos.</p>
+      </div>
+
+      <div class="servicio-card">
+        <div class="icono-servicio">
+          <img src="/images/servicios-servicios/Enfermedades Críticas.jpg" alt="Enfermedades Críticas">
+        </div>
+        <h3>Enfermedades Críticas</h3>
+        <p>Obtén un monto garantizado si eres diagnosticado con enfermedades graves o cáncer.</p>
+      </div>
+
+      <div class="servicio-card">
+        <div class="icono-servicio">
+          <img src="/images/servicios-servicios/Discapacidad.png" alt="Discapacidad y Reposo">
+        </div>
+        <h3>Discapacidad y Reposo</h3>
+        <p>Recibe un porcentaje de tu sueldo si quedas inhabilitado o te dan reposo médico.</p>
+      </div>
+
+      <div class="servicio-card">
+        <div class="icono-servicio">
+          <img src="/images/servicios-servicios/Seguros de Vida.avif" alt="Seguros de Vida">
+        </div>
+        <h3>Seguros de Vida</h3>
+        <p>Beneficios económicos en caso de fallecimiento, enfermedad terminal o para gastos funerarios.</p>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- Fin del contenido principal testimonio -->
+
+  <section class="testimonios-section">
+    <h2>Lo que dicen nuestros clientes</h2>
+    <div class="testimonios-carousel">
+      <div class="testimonio activo">
+        <p class="texto">"Excelente servicio, muy atentos y rápidos. Me siento protegido en todo momento."</p>
+        <div class="cliente">
+          <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Cliente 1">
+          <h4>Juan Pérez</h4>
+          <span>Empresario</span>
+        </div>
+      </div>
+      <div class="testimonio">
+        <p class="texto">"La asesoría fue clara y precisa. Me ayudaron a elegir el mejor seguro para mí."</p>
+        <div class="cliente">
+          <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Cliente 2">
+          <h4>María Gómez</h4>
+          <span>Contadora</span>
+        </div>
+      </div>
+      <div class="testimonio">
+        <p class="texto">"Recomiendo totalmente. Servicio de calidad y una atención increíble."</p>
+        <div class="cliente">
+          <img src="https://randomuser.me/api/portraits/men/54.jpg" alt="Cliente 3">
+          <h4>Carlos Ruiz</h4>
+          <span>Ingeniero</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- FOOTER -->
+  <div id="footer-placeholder"></div>
+
+  <!-- Script principal -->
+  <script src="/assets/script.js"></script>
+  <script src="/scripts/servicios-script.js"></script>
+
+  <script>
+    // Cargar HEADER (ajusta ruta según ubicación del HTML)
+    fetch('../../Parciales HF/header.html')
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById('header-placeholder').innerHTML = data;
+      });
+
+    // Cargar FOOTER
+    fetch('../../Parciales HF/footer.html')
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById('footer-placeholder').innerHTML = data;
+      });
+  </script>
+</body>

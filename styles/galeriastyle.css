@@ -1,0 +1,129 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #ffffff;
+  margin: 0;
+  padding: 20px;
+}
+
+.filtros {
+  margin-top: 20px;
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+}
+
+.filtro {
+  padding: 8px 22px;
+  border-radius: 30px;
+  border: 2px solid #f48ca3;
+  background-color: transparent;
+  color: #f48ca3;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.filtro.activo {
+  background-color: #f48ca3;
+  color: white;
+}
+
+.catalogo {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.item {
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease;
+  cursor: pointer;
+}
+
+.item:hover {
+  transform: scale(1.02);
+}
+
+.item img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  display: block;
+}
+
+.nombre {
+  padding: 12px;
+  font-weight: bold;
+  font-size: 15px;
+  color: #333;
+  background: #fafafa;
+  text-align: center;
+}
+
+.item.oculto {
+  display: none !important;
+}
+
+/* Lightbox */
+.lightbox {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.85);
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.lightbox-content {
+  background: white;
+  padding: 25px;
+  text-align: center;
+  border-radius: 12px;
+  max-width: 90%;
+  position: relative;
+  max-height: 80vh;
+  overflow: auto;
+}
+
+.lightbox-content img {
+  max-width: 100%;
+  max-height: 60vh;
+  object-fit: contain; /* Asegura que se vea completa */
+  border-radius: 8px;
+}
+
+
+.cerrar {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 24px;
+  color: #999;
+  cursor: pointer;
+}
+
+.nombre-lb {
+  margin-top: 15px;
+  font-weight: bold;
+  color: #444;
+  font-size: 17px;
+}
+
+.btn-publicacion {
+  display: inline-block;
+  margin-top: 12px;
+  padding: 10px 20px;
+  background-color: #f48ca3;
+  color: white;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+}
