@@ -99,7 +99,7 @@ form button:hover {
 .chat-body {
   flex: 1;
   padding: 15px;
-  background: url('https://i.imgur.com/2tujvWA.png'); /* patrón similar a WhatsApp */
+  background: url('../images/contacto/whatsapp.jpg'); /* patrón similar a WhatsApp */
   background-size: cover;
 }
 
