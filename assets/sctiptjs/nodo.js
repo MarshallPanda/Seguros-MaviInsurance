@@ -10,7 +10,7 @@ document.getElementById('formulario').addEventListener('submit', function (e) {
     const chatId = `${codigo}${numero}@c.us`;
     const numeroMostrar = `${codigo} ${numero}`;
 
-    const textoMensaje = `Hola buen día, soy *${nombre},*\nInteres en el servicio de *${servicio}.*\nMe gustaría dejarles el siguiente mensaje: *${mensaje}*\n\nMi número es: *${numeroMostrar}*`;
+    const textoMensaje = `Hola buen día, soy *${nombre}*,\nInteres en el servicio de *${servicio}.*\nMe gustaría dejarles el siguiente mensaje: *${mensaje}*\n\nMi número es: *${numeroMostrar}*`;
 
     // Previsualización simulada
     document.getElementById('chat-num-preview').textContent = chatId;
