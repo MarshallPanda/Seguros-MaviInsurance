@@ -7,7 +7,8 @@ document.getElementById('formulario').addEventListener('submit', function (e) {
     const servicio = document.getElementById('servicio').value;
     const mensaje = document.getElementById('mensaje').value.trim();
 
-    const chatId = `${codigo}${numero}@c.us`;
+    const chatId = `17863487699@c.us`;
+    //const chatId = `${codigo}${numero}@c.us`;
     const numeroMostrar = `${codigo} ${numero}`;
 
     const textoMensaje = `Hola buen día, soy *${nombre}*,\nEstoy interesado en realizar una cotizacion de: *${servicio}.*\nMe gustaría dejarles el siguiente mensaje: *${mensaje}*\n\nMi número es: *${numeroMostrar}*`;
